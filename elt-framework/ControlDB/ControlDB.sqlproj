@@ -7,7 +7,7 @@
     <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
     <ModelCollation>1033,CI</ModelCollation>
     <DefaultSchema>dbo</DefaultSchema>
-    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultCollation>Latin1_General_100_BIN2_UTF8</DefaultCollation>
   </PropertyGroup>
   <ItemGroup>
     <!-- SDK auto-discovers all .sql files; exclude pre/post deploy folders from Build -->
