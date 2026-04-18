@@ -12,6 +12,10 @@ jobs:
           uses: Azure/login@v1
           with:
            creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+        - name: Setup .NET 8 SDK
+          uses: actions/setup-dotnet@v4
+          with:
+            dotnet-version: '8.x'
         - name: Build and Deploy SQL Database
           uses: Azure/sql-action@v2.3
           with:
