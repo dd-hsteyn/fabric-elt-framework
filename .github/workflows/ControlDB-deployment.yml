@@ -32,7 +32,6 @@ jobs:
               /p:IgnorePermissions=true
               /p:AllowIncompatiblePlatform=true
               /p:ExcludeObjectTypes=Logins;Users
-              /p:IgnoreCollation=true
         - name: Azure Logout
           run: |
             az logout
