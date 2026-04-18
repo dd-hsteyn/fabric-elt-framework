@@ -13,8 +13,9 @@
     <!-- SDK auto-discovers all .sql files; exclude pre/post deploy folders from Build -->
     <Build Remove="Pre Deployment Script\**\*.sql" />
     <Build Remove="Post Deployment Script\**\*.sql" />
-    <!-- Fabric DW does not support PRIMARY KEY in CREATE TABLE -->
+    <!-- Fabric DW does not support PRIMARY KEY or FOREIGN KEY constraints -->
     <Build Remove="ELT\Keys\PK_*.sql" />
+    <Build Remove="ELT\Keys\FK_*.sql" />
   </ItemGroup>
 
   <ItemGroup>
