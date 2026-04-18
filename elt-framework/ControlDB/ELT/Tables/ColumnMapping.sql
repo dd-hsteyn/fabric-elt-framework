@@ -1,7 +1,7 @@
 ﻿GO
 
 CREATE TABLE [ELT].[ColumnMapping](
-	[MappingID] int NOT NULL IDENTITY,
+	[MappingID] bigint NOT NULL IDENTITY,
 	[IngestID] int NULL,
 	[L1TransformID] int NULL,
 	[L2TransformID] int NULL,

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [ELT].[L1TransformDefinition]
 (
-	[L1TransformID] int not null identity,
+	[L1TransformID] bigint not null identity,
 	[IngestID] int not null,
 	[ComputePath] varchar(200) null,
 	[ComputeName] varchar(100) null,

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [ELT].[IngestDefinition]
 (
-	[IngestID] int not null identity,
+	[IngestID] bigint not null identity,
 	[SourceSystemName] varchar(50) not null,
 	[StreamName] varchar(100) null,
 	[SourceSystemDescription] varchar(200) null,

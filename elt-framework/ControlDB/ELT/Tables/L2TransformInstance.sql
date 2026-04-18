@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [ELT].[L2TransformInstance]
 (
-	[L2TransformInstanceID] int not null identity,
+	[L2TransformInstanceID] bigint not null identity,
 	[L2TransformID] int null,
 	[IngestID] int null,
 	[L1TransformID] int null,
